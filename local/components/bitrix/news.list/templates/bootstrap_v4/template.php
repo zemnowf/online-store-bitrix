@@ -19,7 +19,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 		<?if($arParams["DISPLAY_TOP_PAGER"]):?>
 			<?=$arResult["NAV_STRING"]?><br />
 		<?endif;?>
-
+        <? echo "<pre>"; print_r($arParams);?>
 		<div class="row">
 			<?foreach($arResult["ITEMS"] as $arItem):?>
 				<?

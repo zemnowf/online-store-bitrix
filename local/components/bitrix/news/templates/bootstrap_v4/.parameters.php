@@ -59,6 +59,11 @@ $arTemplateParameters = array(
 		"TYPE" => "LIST",
 		"VALUES" => $mediaProperty,
 	),
+    "SPECIALDATE" => Array(
+        "NAME" => GetMessage("SPECIALDATE"),
+        "TYPE" => "CHECKBOX",
+        "DEFAULT" => "Y",
+    ),
 	"SLIDER_PROPERTY" => array(
 		"NAME" => GetMessage("TP_BN_SLIDER_PROPERTY"),
 		"TYPE" => "LIST",

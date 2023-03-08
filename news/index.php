@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Новости");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	".default", 
+	"bootstrap_v4", 
 	array(
 		"IBLOCK_TYPE" => "news",
 		"IBLOCK_ID" => "2",
@@ -41,6 +41,7 @@ $APPLICATION->SetTitle("Новости");
 		"ADD_SECTIONS_CHAIN" => "N",
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"USE_PERMISSIONS" => "N",
+        "SPECIALDATE" => "Y",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"LIST_FIELD_CODE" => array(
@@ -82,8 +83,8 @@ $APPLICATION->SetTitle("Новости");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"SLIDER_PROPERTY" => "PICS_NEWS",
-		"COMPONENT_TEMPLATE" => ".default",
+		"SLIDER_PROPERTY" => "",
+		"COMPONENT_TEMPLATE" => "bootstrap_v4",
 		"SET_LAST_MODIFIED" => "N",
 		"STRICT_SECTION_CHECK" => "N",
 		"USE_SHARE" => "N",
@@ -91,6 +92,7 @@ $APPLICATION->SetTitle("Новости");
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
+		"MEDIA_PROPERTY" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

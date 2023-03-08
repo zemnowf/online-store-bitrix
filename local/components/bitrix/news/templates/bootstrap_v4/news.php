@@ -131,6 +131,7 @@ $this->setFrameMode(true);
 		"SHARE_SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
 
 		"TEMPLATE_THEME" => $arParams["TEMPLATE_THEME"],
+		"SPECIALDATE" => $arParams["SPECIALDATE"],
 	),
 	$component
 );?>

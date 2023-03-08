@@ -192,7 +192,8 @@ $arResult["NAV_STRING"] = $arResult["NAV_RESULT"]->GetPageNavStringEx(
 	$arResult["NAV_PARAM"]
 );
 
-if ($arParams['SPECIALDATE'] == 'Y') {
-    $arResult['DATE_FIRST_NEWS'] = $arResult["ITEMS"][0]["ACTIVE_FROM"];
+if ($arParams["SPECIALDATE"] == "Y") {
+    echo "RM Y";
+    $arResult["DATE_FIRST_NEWS"] = $arResult["ITEMS"][0]["ACTIVE_FROM"];
     $this->__component->SetResultCacheKeys([('DATE_FIRST_NEWS')]);
-}
+} else echo "RM FAIL";

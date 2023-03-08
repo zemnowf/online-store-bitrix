@@ -65,6 +65,11 @@ $arTemplateParameters = array(
 		"TYPE" => "STRING",
 		"DEFAULT" => "/search/",
 	),
+    "SPECIALDATE" => Array(
+        "NAME" => GetMessage("SPECIALDATE"),
+        "TYPE" => "CHECKBOX",
+        "DEFAULT" => "Y",
+    ),
 );
 
 $arTemplateParameters["USE_RATING"] = array(
