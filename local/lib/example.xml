@@ -1,0 +1,45 @@
+<orders>
+    <order id="127">
+        <dateInsert>(DateTime)</dateInsert> // дата добавления
+        <dateUpdate>(DateTime)</dateUpdate> // дата обновления
+        <personTypeId>(Int)</personTypeId> // Идентификатор типа плательщика.
+        <statusId>(Str)</statusId> // Идентификатор статуса.
+        <price>(Float)</price> // стоимость по заказу
+        <discountValue>(Float)</discountValue> //скидка по заказу
+        <userId>(Int)</userId> // Идентификатор пользователя
+        <accountnumber>(Str)</accountnumber> //Номер заказа
+        <payed>(Bool: Y / N)</payed> // Оплачен или нет
+        <properties>
+            <userProperties> // свойства из профиля пользователя
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+            </userProperties>
+            <orderProperties> //остальные заполненные свойства заказа
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+                <property code="(символьный код свойства)">(value: в зависимости от типа свойства)</property>
+            </orderProperties>
+        </properties>
+        <basketItems> // коллекция элементов корзины
+            <basketItem id="123"> // Элемент корзины со своим id
+                <productId>(Int)</productId> // id Продукта
+                <name>(Str)</name> // Название товара.
+                <price>(Float)</price> // Цена товара с учетом скидок и наценок.
+                <basePrice>(Float)</basePrice> Цена товара без учета скидок и наценок.
+                <quantity>(Int)</quantity> // Количество.
+                <discountPrice>(Float)</discountPrice> // Скидка.
+            </basketItem>
+            <basketItem id="124"> // Элемент корзины со своим id
+                <productId>(Int)</productId> // id Продукта
+                <name>(Str)</name> // Название товара.
+                <price>(Float)</price> // Цена товара с учетом скидок и наценок.
+                <basePrice>(Float)</basePrice> Цена товара без учета скидок и наценок.
+                <quantity>(Int)</quantity> // Количество.
+                <discountPrice>(Float)</discountPrice> // Скидка.
+            </basketItem>
+        </basketItems>
+    </order>
+</orders>

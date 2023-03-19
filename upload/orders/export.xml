@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+	<order id="1">
+		<dateInsert>18.03.2023 16:19:33</dateInsert>
+		<dateUpdate>18.03.2023 16:19:33</dateUpdate>
+		<personTypeId>1</personTypeId>
+		<statusId>N</statusId>
+		<price>1800</price>
+		<discountValue>0</discountValue>
+		<userId>2</userId>
+		<accountnumber>1</accountnumber>
+		<payed>N</payed>
+		<properties>
+			<userProperties>
+				<property code="FIO">
+					<value>Иван Иванов</value>
+				</property>
+				<property code="EMAIL">
+					<value>ivan@gmail.co</value>
+				</property>
+				<property code="PHONE">
+					<value>375445776388</value>
+				</property>
+				<property code="ZIP">
+					<value>101000</value>
+				</property>
+				<property code="LOCATION">
+					<value>0000073738</value>
+				</property>
+				<property code="CITY">
+					<value>Москва</value>
+				</property>
+				<property code="ADDRESS">
+					<value>Minsk</value>
+				</property>
+			</userProperties>
+			<orderProperties>
+			</orderProperties>
+		</properties>
+		<basketItems>
+			<basketItem id="0">
+				<productId>6</productId>
+				<name >Werewolves two minis</name >
+				<price>1800</price>
+				<basePrice>1800</basePrice>
+				<quantity>1</quantity>
+				<discountPrice>0</discountPrice>
+			</basketItem>
+		</basketItems>
+	</order>
+</orders>

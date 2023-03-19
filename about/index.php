@@ -43,4 +43,15 @@ $APPLICATION->SetTitle("О магазине");
 	<p>Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания, касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:</p>
 	<p><b>Электронная почта</b>: <a href="mailto:sale@localsite">sale@localsite</a></p>
 
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?
+use Lib\OrderExportAgent;
+
+if (OrderExportAgent::start()) {
+    echo '<p> Выгрузка заказов в xml </p>';
+} else {
+    echo '<p> Ошибка </p>';
+}
+
+
+
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
