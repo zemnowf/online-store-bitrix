@@ -1,0 +1,15 @@
+.feedback-form {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.ui-alert-hidden {
+    display: none;
+}
